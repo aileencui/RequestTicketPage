@@ -168,11 +168,12 @@ background-position:-167px -36px;
     display:inline-block!important;
 }
 
+
 /*--banner--*/
 .banner{
 	background:url(../images/bnr.jpg) no-repeat 0px 0px;
 	background-size:cover;
-	min-height:480px;
+	min-height:640px;
 }
 .banner-info{
 	text-align: center;
@@ -216,12 +217,12 @@ background-position:-167px -36px;
     display: block;
     font-family: 'Mandali-Regular';
     font-size: 1.4em;
-    color: #000000;
+    color: #FFF;
     text-decoration: none;
 }
 .top-nav {
     text-align: center;
-    background-color: #FFFFFF;
+    background-color: #2C302F;
     padding: 1em 0;
     z-index: 999;
 }
@@ -252,7 +253,7 @@ div#bs-example-navbar-collapse-1 {
     padding: 0;
 }
 .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus, .top-nav ul li  a.active:before {
-    color: #5BD982;
+    color: #B8D29B;
 }
 ul.dropdown-menu {
     background: #2C302F;
@@ -279,7 +280,7 @@ ul.dropdown-menu {
 }
 .dropdown-menu > li > a:hover, .dropdown-menu > li > a:focus {
     background: none;
-	color: #5BD982 !important;
+	color: #B8D29B !important;
 }
 .dropdown-submenu {
     position: relative;
@@ -328,14 +329,14 @@ ul.dropdown-menu {
     margin-left: 9px;
 }
 .navbar-default .navbar-nav > li > a {
-    color: #6c7371;
+    color: #FFF;
 }
 .navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus {
     color: #FFF;
     background: none;
 }
 .top-nav ul li a.active {
-    color: #5BD982 !important;
+    color: #B8D29B !important;
 }
 /* Effect 11: text fill based on Lea Verou's animation http://dabblet.com/gist/6046779 */
 .top-nav ul li a {
@@ -372,6 +373,7 @@ ul.dropdown-menu {
     left: 0;
 }
 /*--//top-nav--*/
+
 /*--welcome--*/
 .welcome{
 	padding:3em 0 4em;
@@ -411,6 +413,10 @@ ul.dropdown-menu {
 }
 p.text{
 	margin-top:1em;
+}
+
+p.info{
+	margin-top:0;
 }
 /*--services--*/
 .services{
@@ -458,7 +464,7 @@ background: none;
 }
 .service-box .icon img {
   position: relative;
-  z-index: 100;
+  z-index: -100;
   transition: all 0.3s ease 0s;
 }
 .service-box .icon:before {
@@ -493,9 +499,9 @@ background: none;
   transform: scale(1);
 }
 .service-box h5{
-  font-size: 1.4em;
+  font-size: 0.8em;
   color: #252525;
-  margin: 1em 0em 0.5em 0em;
+  margin: 1em 1em 1em 1em;
 }
 .service-box p{
 color: #999;

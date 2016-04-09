@@ -158,7 +158,7 @@ background-position:-167px -36px;
 	font-size:0.9em;
 }
 .details ul li a:hover{
-	color:#b8d29b;
+	color:#009944;
 }
 .glyphicon-earphone:before,.glyphicon-envelope:before  {
   font-size:13px;
@@ -198,13 +198,13 @@ background-position:-167px -36px;
 	color:#fff;
 	margin-top:3em;
 	padding:0.5em 3em;
-	background:#B8D29B;
+	background:#009944;
 	display:inline-block;
-	border:2px solid #B8D29B;
+	border:2px solid #009944;
 }
 .banner-info a:hover{
 	background:transparent;
-	border:2px solid #B8D29B;
+	border:2px solid #009944;
 }
 /*--top-nav--*/
 .logo {
@@ -253,7 +253,7 @@ div#bs-example-navbar-collapse-1 {
     padding: 0;
 }
 .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus, .top-nav ul li  a.active:before {
-    color: #B8D29B;
+    color: #009944;
 }
 ul.dropdown-menu {
     background: #2C302F;
@@ -280,7 +280,7 @@ ul.dropdown-menu {
 }
 .dropdown-menu > li > a:hover, .dropdown-menu > li > a:focus {
     background: none;
-	color: #B8D29B !important;
+	color: #009944 !important;
 }
 .dropdown-submenu {
     position: relative;
@@ -336,7 +336,7 @@ ul.dropdown-menu {
     background: none;
 }
 .top-nav ul li a.active {
-    color: #B8D29B !important;
+    color: #009944 !important;
 }
 /* Effect 11: text fill based on Lea Verou's animation http://dabblet.com/gist/6046779 */
 .top-nav ul li a {
@@ -378,9 +378,10 @@ ul.dropdown-menu {
 .welcome{
 	padding:3em 0 4em;
 }
+
 .welcm-left h3{
 	font-size: 3em;
-    color:#B8D29B;
+    color:#009944;
     font-family: 'Exo2-Medium';
 }
 .welcm-left h4{
@@ -418,139 +419,76 @@ p.text{
 p.info{
 	margin-top:0;
 }
-/*--services--*/
+
+/*-- services --*/
 .services{
-	padding-bottom:4em;
+    padding: 4em 0 4em 0 ;
+    background: #F5F5F5;
 }
-.services h3,.gallery-info h3,.team h3,.contact h3{
+.services-info h3{
 	font-size: 3em;
-    color:#B8D29B;
+    color:#009944;
     font-family: 'Exo2-Medium';
 	text-align:center;
 }
-.specialty{
-  padding: 3em 0;
-  background: #FAFAFA;
+.services-grids {
+    margin-top: 4em;
 }
-.specialty-info h5 {
-  color: #969696;
-  font-size: 14px;
-  margin: 1em 0;
-  line-height: 1.8em;
+.services-grid{
+	text-align:center;
+	margin-bottom: 2em;
 }
-.specialty-info p {
-  color: #333333;
-  margin: 3em 0 0 0;
-  line-height: 1.8em;
-  font-weight: 600;
+.services-icon {
+    background: #dfdfdf;
+    width: 100px;
+    height: 100px;
+    line-height: 7.5em;
+    margin: 0 auto;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -o-border-radius: 50%;
 }
-.service-box {
-background: none;
-  border: none;
-  box-shadow: none;
-  border-radius: 0;
-  padding: 0;
-  overflow: visible;
-  text-align: center;
-  margin:0 0 5em 0;
+.glyphicon-asterisk {
+    font-size: 2em;
+    color: #ffffff;
 }
-.service-box .icon {
-  width: 30px;
-  height: 30px;
-  border-radius: 50%;
-  background:#dfdfdf;
-  margin: 0 auto;
-  text-align: center;
-  position: relative;	
+.services-grid h4{
+	color: #000;
+    font-size: 1em;
+    font-weight: 600;
+    margin: 2em 0 1em;
 }
-.service-box .icon img {
-  position: center;
-  z-index: -100;
-  transition: all 0.3s ease 0s;
+.services-grid p{
+	color:#777;
+	font-size:.9em;
+	margin:0;
+	line-height:2em;
 }
-.service-box .icon:before {
-  content: '';
-  width: 102%;
-  height: 102%;
-  border-radius: 50%;
-  background: #B8D29B;
-  position: absolute;
-  top: -1px;
-  left: -1px;
-  z-index: 10;
-  -webkit-transform: scale(0);
-  -moz-transform: scale(0);
-  -ms-transform: scale(0);
-  -o-transform: scale(0);
-  transform: scale(0);
-  transition: all 0.3s ease 0s;
+
+.services-grid span {
+    color: #000;
+    font-size: 2.4em;
+    text-align: center;
+    margin: 0;
+    padding: .4em 0 0 0;
+    line-height: 1.2em;
 }
-.service-box:hover .icon img {
-  -webkit-transform: scale(0.9);
-  -moz-transform: scale(0.9);
-  -ms-transform: scale(0.9);
-  -o-transform: scale(0.9);
-  transform: scale(0.9);
+
+.services-grid:hover div.services-icon {
+    transform: rotateY(360deg);
+    -webkit-transform: rotateY(360deg);
+    -o-transform: rotateY(360deg);
+    -ms-transform: rotateY(360deg);
+    -moz-transform: rotateY(360deg);
+    transition: 0.5s all ease;
+    -webkit-transition: 0.5s all ease;
+    -moz-transition: 0.5s all ease;
+    -o-transition: 0.5s all ease;
+    -ms-transition: 0.5s all ease;
 }
-.service-box:hover .icon:before {
-  -webkit-transform: scale(1);
-  -moz-transform: scale(1);
-  -ms-transform: scale(1);
-  -o-transform: scale(1);
-  transform: scale(1);
-}
-.service-box h5{
-  font-size: 0.8em;
-  color: #252525;
-  margin: 1em 1em 1em 1em;
-}
-.service-box p{
-color: #999;
-    font-size: 0.9em;
-    line-height: 1.8em;
-	margin: 0 auto;
-    width: 84%;
-}
-.specialty-grids-top:nth-child(2) {
-  margin-top: 4em;
-}
-.specialty-button{
-	margin-top:3em;
-}
-.glyphicon-hourglass:before{
-	color:#fff;
-  font-size:30px;
-}
-.glyphicon-leaf,.glyphicon-edit:before {
-    color:#fff;
-  font-size:36px;
-}
-.glyphicon {
-    position: relative;
-  top: 3px;
-  display: block;
-  font-family: 'Glyphicons Halflings';
-  font-style: normal;
-  font-weight: normal;
-  text-align: center;
-  line-height: 1;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  z-index: 999;
-}
-.glyphicon3 {
-  position: relative;
-  top: 33px;
-  display: inline-block;
-  font-family: 'Glyphicons Halflings';
-  font-style: normal;
-  font-weight: normal;
-  left: 0px;
-  line-height: 1;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  z-index:999;
-}
+
 /*-- gallery --*/
 .gallery-info {
     text-align: center;
@@ -733,7 +671,7 @@ color: #999;
 	background:rgba(0, 0, 0, 0.69);
 }
 .testimonial-right h5{
-	    color: #B8D29B;
+	    color: #009944;
     font-family: 'Exo2-Medium';
 	margin-top:1em;
 	font-size:1.6em;
@@ -772,7 +710,7 @@ color: #999;
 	border:2px solid #fff;
 }
 .callbacks_here a:after{
-	background:#B8D29B;
+	background:#009944;
 }
 .callbacks_tabs a{
 	visibility:hidden;
@@ -891,11 +829,11 @@ ul.callbacks_tabs.callbacks_tabs {
 .contact-grids input[type="submit"]{
 	outline:none;
 	border:none;
-	background:#B8D29B;
+	background:#009944;
 	width: 13%;
 	display: block;
 	padding: 10px 0px;
-	border:2px solid #B8D29B;
+	border:2px solid #009944;
 	border-radius: 4px;
 	-webkit-border-radius:4px;
 	-moz-border-radius:4px;
@@ -912,7 +850,7 @@ ul.callbacks_tabs.callbacks_tabs {
 }
 .contact-grids input[type="submit"]:hover{
 	background:#fff;
-	color:#B8D29B;
+	color:#009944;
 	}
 .contact-icons{
 	padding:3em 0 4em;
@@ -936,7 +874,7 @@ ul.callbacks_tabs.callbacks_tabs {
 	color: #999;
 }
 .copywrite p a:hover{
-	color:#B8D29B;
+	color:#009944;
 }
 #toTop {
 	display: none;

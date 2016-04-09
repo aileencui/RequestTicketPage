@@ -16,6 +16,23 @@
     <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
 
     <script src="js/jquery.min.js"></script>
+    <!-- js -->
+    <script src="js/jquery-1.11.1.min.js"></script>
+    <script src="js/modernizr.custom.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/responsiveslides.min.js"></script>
+    <!-- //js -->
+    <!-- start-smoth-scrolling-->
+    <script type="text/javascript">
+        jQuery(document).ready(function($) {
+            $(".scroll").click(function(event){
+                event.preventDefault();
+
+                $('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+            });
+        });
+    </script>
+    <!--//end-smoth-scrolling-->
 </head>
 
 <body>
@@ -50,9 +67,9 @@
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-center">
-                    <li><a href="#" class="active">展会简介</a></li>
-                    <li><a href="#">参展范围</a></li>
-                    <li><a href="#">交通指南</a></li>
+                    <li><a href="#about" class="active">展会简介</a></li>
+                    <li><a href="#aboutEnd">参展范围</a></li>
+                    <li><a href="#servicesEnd">交通指南</a></li>
                 </ul>
                 <div class="clearfix"> </div>
             </div>
@@ -95,71 +112,62 @@
             <div class="clearfix"></div>
         </div>
     </div>
+    <div id="aboutEnd"></div>
 </div>
 <!---->
-
-<!---->
-<div id="service" class="services">
+<!-- services -->
+<div id="services" class="services">
+    <!-- container -->
     <div class="container">
-        <h3>参展范围</h3>
-        <div class="specialty-grids-top">
-            <div class="col-md-4 service-box" style="visibility: visible; -webkit-animation-delay: 0.4s;">
-                <figure class="icon">
-                    <span class="glyphicon glyphicon-ok-circle" style="font-size: 26px" aria-hidden="true"></span>
-                </figure>
-                <h5>植保机械、清洗机、喷雾器、园林机械、水泵、农用筛网、种植（施肥）、田间管理等</h5>
+        <div class="services-info">
+            <h3>参展范围</h3>
+        </div>
+        <div class="services-grids">
+            <div class="col-md-4 services-grid">
+                <span>①</span>
+                <h4>植保机械、清洗机、喷雾器、园林机械、水泵、农用筛网、种植（施肥）、田间管理等</h4>
                 <p>The whole, planting, field management (Fertilization), plant protection machinery, washing machine, sprayer, garden machinery, water pump etc.</p>
             </div>
-            <div class="col-md-4 service-box wow bounceIn animated" data-wow-delay="0.4s" style="visibility: visible; -webkit-animation-delay: 0.4s;">
-                <figure class="icon">
-                    <span class="glyphicon glyphicon-ok-circle" style="font-size: 26px"aria-hidden="true"></span>
-                </figure>
-                <h5>收割机械、收割后处理机械、场上作业机械等</h5>
+            <div class="col-md-4 services-grid">
+                <span>②</span>
+                <h4>收割机械、收割后处理机械、场上作业机械等</h4>
                 <p>Mechanical harvesting, post harvest handling machinery, mechanical field operations.</p>
             </div>
-            <div class="col-md-4 service-box wow bounceIn animated" data-wow-delay="0.4s" style="visibility: visible; -webkit-animation-delay: 0.4s;">
-                <figure class="icon">
-                    <span class="glyphicon glyphicon-ok-circle" style="font-size: 26px" aria-hidden="true"></span>
-                </figure>
-                <h5>灌排水利设施、高新节水节能灌溉水利设备、优质输水器材及配套器件</h5>
+            <div class="col-md-4 services-grid">
+                <span>③</span>
+                <h4>灌排水利设施、高新节水节能灌溉水利设备、优质输水器材及配套器件</h4>
                 <p>And water conservancy facilities, high energy and water saving irrigation equipment, high-quality water supplyequipment and supporting device.</p>
             </div>
-            <div class="col-md-4 service-box wow bounceIn animated" data-wow-delay="0.4s" style="visibility: visible; -webkit-animation-delay: 0.4s;">
-                <figure class="icon">
-                    <span class="glyphicon glyphicon-ok-circle" style="font-size: 26px" aria-hidden="true"></span>
-                </figure>
-                <h5>轻、重型农机装备、播种机、收获机配件、各类配附件、加工维修设备、工具等</h5>
+            <div class="col-md-4 services-grid">
+                <span>④</span>
+                <h4>轻、重型农机装备、播种机、收获机配件、各类配附件、加工维修设备、工具等</h4>
                 <p>Light and heavy agricultural equipment, seeder, harvester accessories, all kinds of accessories, machinerepair equipment, tools etc.</p>
             </div>
-            <div class="col-md-4 service-box wow bounceIn animated" data-wow-delay="0.4s" style="visibility: visible; -webkit-animation-delay: 0.4s;">
-                <figure class="icon">
-                    <span class="glyphicon glyphicon-ok-circle" style="font-size: 26px" aria-hidden="true"></span>
-                </figure>
-                <h5>农副产品及粮油加工机械、果蔬保鲜加工机械及贮藏设备（设施）等</h5>
+            <div class="col-md-4 services-grid">
+                <span>⑤</span>
+                <h4>农副产品及粮油加工机械、果蔬保鲜加工机械及贮藏设备（设施）等</h4>
                 <p>Agricultural and sideline products, grain and oil processing machinery, fruit and vegetable processing machinery and storage equipment (facility)</p>
             </div>
-            <div class="col-md-4 service-box wow bounceIn animated" data-wow-delay="0.4s" style="visibility: visible; -webkit-animation-delay: 0.4s;">
-                <figure class="icon">
-                    <span class="glyphicon glyphicon-ok-circle" style="font-size: 26px" aria-hidden="true"></span>
-                </figure>
-                <h5>畜牧(水产)养殖机械、草原建设机械等</h5>
+            <div class="col-md-4 services-grid">
+                <span>⑥</span>
+                <h4>畜牧(水产)养殖机械、草原建设机械等</h4>
                 <p>Animal husbandry (aquatic) farming machinery, construction machinery and other grassland.</p>
             </div>
-            <div class="col-md-4 service-box wow bounceIn animated" data-wow-delay="0.4s" style="visibility: visible; -webkit-animation-delay: 0.4s;">
-                <figure class="icon">
-                    <span class="glyphicon glyphicon-ok-circle" style="font-size: 26px" aria-hidden="true"></span>
-                </figure>
-                <h5>新型农业机械研发、节能环保器材、电子S能控制器、各种测量仪等</h5>
+            <div class="col-md-4 services-grid">
+                <span>⑦</span>
+                <h4>新型农业机械研发、节能环保器材、电子S能控制器、各种测量仪等</h4>
                 <p>New agricultural machinery research and development, energy saving and environmental protectionequipment, electronic intelligent controller, a variety of measurements</p>
             </div>
             <div class="clearfix"> </div>
         </div>
-    </div>
-</div>
-<!---->
 
+        <div id="servicesEnd"></div>
+    </div>
+    <!-- //container -->
+</div>
+<!-- services -->
 <!---->
-<div id="about" class="welcome">
+<div id="about2" class="welcome">
     <div class="container">
         <div class="welcm-grids">
             <div class="col-md-6 welcm-left">

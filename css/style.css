@@ -452,10 +452,11 @@ background: none;
   padding: 0;
   overflow: visible;
   text-align: center;
+  margin:0 0 5em 0;
 }
 .service-box .icon {
-  width: 100px;
-  height: 100px;
+  width: 30px;
+  height: 30px;
   border-radius: 50%;
   background:#dfdfdf;
   margin: 0 auto;
@@ -463,7 +464,7 @@ background: none;
   position: relative;	
 }
 .service-box .icon img {
-  position: relative;
+  position: center;
   z-index: -100;
   transition: all 0.3s ease 0s;
 }

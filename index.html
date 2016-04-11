@@ -4,24 +4,50 @@
 <head>
 <title>CAE中国农机展参展申请</title>
     <link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
-    <!-- jQuery (necessary JavaScript plugins) -->
-    <!-- Custom Theme files -->
     <link href="css/style.css" rel='stylesheet' type='text/css' />
+
     <link rel="stylesheet" href="css/lightbox.css">
-    <!-- Custom Theme files -->
-    <!--//theme style-->
+
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta name="keywords" content="中国农机展,参展申请,免费索票" />
     <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
-
     <script src="js/jquery.min.js"></script>
+    <script src="js/modernizr.custom.js"></script>
+
+    <!---- animated-css ---->
+    <link href="css/animate.css" rel="stylesheet" type="text/css" media="all">
+    <script src="js/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+    <!---- animated-css ---->
+
     <!-- js -->
     <script src="js/jquery-1.11.1.min.js"></script>
     <script src="js/modernizr.custom.js"></script>
     <script src="js/bootstrap.js"></script>
     <script src="js/responsiveslides.min.js"></script>
-    <!-- //js -->
+    <script src="js/jquery.chocolat.js"></script>
+    <link rel="stylesheet" href="css/chocolat.css" type="text/css" media="screen" charset="utf-8">
+    <!--light-box-files -->
+    <script type="text/javascript" charset="utf-8">
+        $(function() {
+            $('.gallery-grids a').Chocolat();
+        });
+    </script>
+    <!--moving-->
+    <script type="text/javascript" src="js/move-top.js"></script>
+    <script type="text/javascript" src="js/easing.js"></script>
+    <script type="text/javascript">
+        jQuery(document).ready(function($) {
+            $(".scroll").click(function(event){
+                event.preventDefault();
+                $('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+            });
+        });
+    </script>
+
     <!-- start-smoth-scrolling-->
     <script type="text/javascript">
         jQuery(document).ready(function($) {
@@ -38,12 +64,12 @@
 <body>
 
 <!---->
-<div class="banner">
+<div class="banner wow fadeInUpBig" data-wow-delay="0.4s">
     <div class="container">
         <div class="banner-info">
-            <h2>超3000平米超大规模 全球最大会展中心首场农机展会</h2>
+            <h2>超30000平米超大规模 全球最大会展中心首场农机展会</h2>
             <h3>承办单位:上海华品展览服务有限公司</h3>
-            <a href="#">免费索票</a>
+            <a href="#freeTicketStart">免费索票</a>
         </div>
     </div>
 </div>
@@ -68,12 +94,22 @@
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-center">
                     <li><a href="#about" class="active">展会简介</a></li>
-                    <li><a href="#aboutEnd">参展范围</a></li>
-                    <li><a href="#servicesEnd">交通指南</a></li>
+                    <li><a href="#servicesStart">参展范围</a></li>
+                    <li><a href="#brandsStart">参展品牌</a></li>
+                    <li><a href="#trafficStart">交通指南</a></li>
                 </ul>
                 <div class="clearfix"> </div>
             </div>
         </div>
+        <!--script-->
+        <script>
+            $(document).ready(function(){
+                $(".top-nav li a").click(function(){
+                    $(this).parent().addClass("active");
+                    $(this).parent().siblings().removeClass("active");
+                });
+            });
+        </script>
     </nav>
 </div>
 <!-- script-for sticky-nav -->
@@ -98,21 +134,22 @@
 <div id="about" class="welcome">
     <div class="container">
         <div class="welcm-grids">
-            <div class="col-md-6 welcm-left">
+            <div class="col-md-6 welcm-left wow fadeInLeft" >
                 <h3>展会简介</h3>
-                <h4>由国家商务部外贸发展局主办，上海华品展览有限公司承办的2017 CAE中国农机展将于2017年3月1日 - 4日在国家会展中心（上海）隆重举行。</h4>
+                <h4>Exhibition Introduction</h4>
+                <h5>由国家商务部外贸发展局主办，上海华品展览有限公司承办的2017 CAE中国农机展将于2017年3月1日 - 4日在国家会展中心（上海）隆重举行。</h5>
                 <p>CAE中国农机展坐标国家会展中心（上海），首届规模30000平方，旨在为中国农机工业打造一个面向全球的国际化展示及交流窗口，成为各国农业机械化相互促进的重要载体，也是中国农机工业缩小与世界先进水平差距的重要机遇。</p>
                 <p class="text">2017 CAE中国农机展以“市场、交流、交易”为主题，旨在为业内专业人士搭建一个：行业之间信息沟通、工商企业产品交流、内销外贸计划衔接的商务贸易大平台！诚挚邀请行业内各生产企业、经销企业、采购商家和专业用户参观交流，洽谈订货！</p>
                 <p class="text">时间：2017年3月1-4日</p>
                 <p class="info">地点：国家会展中心（上海）</p>
             </div>
-            <div class="col-md-6 welcm-right">
+            <div class="col-md-6 welcm-right wow fadeInRight">
                 <img src="images/bnr2.jpg" class="img-responsive" alt=""/>
             </div>
             <div class="clearfix"></div>
         </div>
     </div>
-    <div id="aboutEnd"></div>
+    <div id="servicesStart"></div>
 </div>
 <!---->
 <!-- services -->
@@ -121,39 +158,40 @@
     <div class="container">
         <div class="services-info">
             <h3>参展范围</h3>
+            <h4>Exhibition Scope</h4>
         </div>
         <div class="services-grids">
-            <div class="col-md-4 services-grid">
+            <div class="col-md-3 services-grid">
                 <span>①</span>
                 <h4>植保机械、清洗机、喷雾器、园林机械、水泵、农用筛网、种植（施肥）、田间管理等</h4>
                 <p>The whole, planting, field management (Fertilization), plant protection machinery, washing machine, sprayer, garden machinery, water pump etc.</p>
             </div>
-            <div class="col-md-4 services-grid">
+            <div class="col-md-3 services-grid">
                 <span>②</span>
                 <h4>收割机械、收割后处理机械、场上作业机械等</h4>
                 <p>Mechanical harvesting, post harvest handling machinery, mechanical field operations.</p>
             </div>
-            <div class="col-md-4 services-grid">
+            <div class="col-md-3 services-grid">
                 <span>③</span>
                 <h4>灌排水利设施、高新节水节能灌溉水利设备、优质输水器材及配套器件</h4>
                 <p>And water conservancy facilities, high energy and water saving irrigation equipment, high-quality water supplyequipment and supporting device.</p>
             </div>
-            <div class="col-md-4 services-grid">
+            <div class="col-md-3 services-grid">
                 <span>④</span>
                 <h4>轻、重型农机装备、播种机、收获机配件、各类配附件、加工维修设备、工具等</h4>
                 <p>Light and heavy agricultural equipment, seeder, harvester accessories, all kinds of accessories, machinerepair equipment, tools etc.</p>
             </div>
-            <div class="col-md-4 services-grid">
+            <div class="col-md-3 services-grid">
                 <span>⑤</span>
                 <h4>农副产品及粮油加工机械、果蔬保鲜加工机械及贮藏设备（设施）等</h4>
                 <p>Agricultural and sideline products, grain and oil processing machinery, fruit and vegetable processing machinery and storage equipment (facility)</p>
             </div>
-            <div class="col-md-4 services-grid">
+            <div class="col-md-3 services-grid">
                 <span>⑥</span>
                 <h4>畜牧(水产)养殖机械、草原建设机械等</h4>
                 <p>Animal husbandry (aquatic) farming machinery, construction machinery and other grassland.</p>
             </div>
-            <div class="col-md-4 services-grid">
+            <div class="col-md-3 services-grid">
                 <span>⑦</span>
                 <h4>新型农业机械研发、节能环保器材、电子S能控制器、各种测量仪等</h4>
                 <p>New agricultural machinery research and development, energy saving and environmental protectionequipment, electronic intelligent controller, a variety of measurements</p>
@@ -161,32 +199,191 @@
             <div class="clearfix"> </div>
         </div>
 
-        <div id="servicesEnd"></div>
+        <div id="brandsStart"></div>
     </div>
     <!-- //container -->
 </div>
 <!-- services -->
-<!---->
-<div id="about2" class="welcome">
+
+<!-- brand -->
+<div id = "brands" class="brands">
+    <div class="container">
+        <div class="brands-info">
+            <h3>参与品牌</h3>
+            <h4>Exhibition Brand</h4>
+        </div>
+        <ul id="flexiselDemo3">
+            <li>
+                <div class="brand">
+                    <img src="images/1.jpg" class="img-responsive" alt="">
+                </div>
+            </li>
+            <li>
+                    <div class="brand">
+                        <img src="images/2.jpg" class="img-responsive" alt="">
+                    </div>
+            </li>
+            <li>
+                    <div class="brand">
+                        <img src="images/3.jpg" class="img-responsive" alt="">
+                    </div>
+            </li>
+            <li>
+                <div class="brand">
+                    <img src="images/4.jpg" class="img-responsive" alt="">
+                </div>
+            </li>
+        </ul>
+
+        <script type="text/javascript">
+            $(window).load(function() {
+
+                $("#flexiselDemo3").flexisel({
+                    visibleItems: 4,
+                    animationSpeed: 1000,
+                    autoPlay: true,
+                    autoPlaySpeed: 3000,
+                    pauseOnHover: true,
+                    enableResponsiveBreakpoints: true,
+                    responsiveBreakpoints: {
+                        portrait: {
+                            changePoint:480,
+                            visibleItems: 2
+                        },
+                        landscape: {
+                            changePoint:640,
+                            visibleItems: 3
+                        },
+                        tablet: {
+                            changePoint:768,
+                            visibleItems: 3
+                        }
+                    }
+                });
+
+            });
+        </script>
+        <script type="text/javascript" src="js/jquery.flexisel.js"></script>
+        <div class="clearfix"> </div>
+    </div>
+    <div id="trafficStart"></div>
+</div>
+<!-- banner -->
+
+<div id="traffic" class="welcome">
     <div class="container">
         <div class="welcm-grids">
-            <div class="col-md-6 welcm-left">
-                <h3>交通指南</h3>
-                <h4>Ut eget neque ac ipsum venenatis lobortis at et diam.</h4>
-                <p>Curabitur porta nisl non dui lobortis, vel aliquet ex pretium. Vivamus ullamcorper odio at commodo egestas.
-                    Mauris lacinia nibh a enim dictum, sit amet scelerisque enim molestie. Morbi ac laoreet ante, quis fermentum urna.
-                    Etiam sit amet massa non nunc tincidunt mattis. Nunc non ex Aenean dictum est eu accumsan tincidunt. ultricies, tristique leo sed, vehicula mauris. Sed mollis tristique ligula, nec euismod dolor pharetra non.</p>
-                <p class="text">Quisque molestie a lectus eget rutrum. Cras mollis tortor iaculis, rhoncus augue id, auctor massa. Donec mollis magna sed consequat rutrum. Etiam sit amet dui id velit porta efficitur at vitae arcu. Duis auctor suscipit laoreet. Nullam semper justo ac quam egestas vulputate.</p>
+            <div class="container">
+                <div class="col-md-6 welcm-left">
+                    <h3>交通指南</h3>
+                    <h4>Traffic Guidance</h4>
+                    <h5>公交线路</h5>
+                    <p>1、865路：可驳接地铁上海动物园、漕河泾开发区、锦江乐园站;</p>
+                    <p class="text"> 2、706路：可驳接地铁九亭站；3、776路：可驳接地铁紫藤路、中山公园站。</p>
+                    <h5>出租车</h5>
+                    <p>1、高架道路：延安高架、南部外环高速方向，嘉闵高架-建虹高架-盈港东路-诸光路（国家会展中心西门）；北翟高架、北部外环高速方向，嘉闵高架-崧泽高架-蟠龙路下匝道-龙联路-诸光路（国家会展中心西门）。</p>
+                    <p class="text">2、地面道路：北翟路/天山西路/仙霞西路方向，申长路或华翔路-崧泽大道-诸光路（国家会展中心西门）；延安路方向，延安西路-沪青平公路-诸光路（国家会展中心西门）。出租车由诸光路西入口经20号门到达北厅外专用车道边下客，空载出租经由18号门进入场馆指定区域蓄车。</p>
+                </div>
+                <div class="col-md-6 welcm-right">
+                    <h5>轨道交通</h5>
+                    <p>
+                        2号线徐泾东站4、5、6号出口。
+                    </p>
+                    <img src="images/guozhanditu.jpg" class="img-responsive" alt=""/>
+
+                </div>
             </div>
-            <div class="col-md-6 welcm-right">
-                <h3>Etiam aliquam arcu vitae maximus.</h3>
-                <img src="images/bnr2.jpg" class="img-responsive" alt=""/>
-                <p>Mauris non suscipit mi. Interdum et malesuada fames ac ante ipsum primis in faucibus. Sed eros felis, faucibus ut dui sed, volutpat auctor nibh. Fusce ornare urna id risus dignissim luctus.</p>
+            <div class="container">
+                <div class="col-md-6 welcm-left">
+                    <h5>自驾车</h5>
+                    <p>1、从上海市区：
+                        <p class="text">（1）延安高架、南部外环高速方向，嘉闵高架-建虹高架-盈港东路-2号停车场（盈港东路北侧靠近诸光路），或盈港东路-诸光路-崧泽大道（国家会展中心北门）-北展场指定位置停车；
+                    </p>
+                    <p class="text">（2）北翟高架、北部外环高速方向，嘉闵高架-崧泽高架-蟠龙路下匝道右转-1号停车场（崧泽大道北侧蟠东路西侧）-龙联路-诸光路-崧泽大道（国家会展中心北门）-北展场指定位置停车。</p>
+                    </p>
+                    <p class="text">2、从长三角：</p>
+                    <p class="text">杭州、宁波、苏州方向客流可分别G60、G2等高速汇集至G15沈海高速-崧泽大道下匝道-崧泽大道（国家会展中心北门）-北展场指定位置停车，或崧泽大道-诸光路-盈港东路-2号停车场（盈港东路北侧靠近诸光路）。</p>
+                </div>
+                <div class="col-md-6 welcm-right">
+                    <h5>停车位</h5>
+                    <p>1、会展内配置4000个小车泊位（展馆区3000、配套区1000）
+                        2、外围设置4处配套停车换乘设施，设置7000个小车泊位
+                        3、临近设置1处综合停车场，设置800 个大巴泊位、2000个小车泊位</p>
+                    <p class="text">
+                        货车轮侯A区 货车轮侯B区
+                        内部停车场，4000泊位
+                        1号停车场，1500泊位
+                        2号停车场，1500泊位
+                        3号停车场，2000泊位
+                        4号停车场，2000泊位
+                        5号停车场，2000泊位，800大巴泊位
+                    </p>
+                    <img src="images/chewei.png" class="img-responsive" alt=""/>
+                    </div>
             </div>
+
             <div class="clearfix"></div>
+        </div>
+        <div id ="freeTicketStart"></div>
+    </div>
+</div>
+
+
+
+<!---->
+
+<div class="contact" id="contact">
+    <div class="container">
+        <div class="contact-top">
+            <h3>免费索票</h3>
+            <h4>Request Ticket Free</h4>
+            <p>免费索取价值100元套票两张。  </p>
+
+        </div>
+        <div class="col-md-8 contact-form">
+            <form>
+                <input type="text" placeholder="公司名称">
+                <input type="text" placeholder="联系人">
+                <input type="text" placeholder="手机号码">
+                <input type="text" placeholder="快递地址">
+                <input type="text" placeholder="电子邮箱">
+                <input type="submit" value="SEND">
+            </form>
+
+        </div>
+        <div class="col-md-4 contact-para">
+            <p>请详细填写您的信息，确保收到门票资料</p>
+            <p>Please fill in your information carefully to ensure that you can receive tickets and materials</p>
+            <div class="address-more">
+                <h4>注意事项:</h4>
+                <p>CME 2017主办方热诚欢迎业内人士光临展位，CME的举办时间为 2017年3月1日-4日，每日开放时间为上午09：00—下午16：30。</p>
+                <p>通过网络登录平台报名成功，组委会将发送电子门票到您的手机上，现场凭此电子门票以及两张名片即可入场。</p>
+                <p>请阁下随身保管好重要物品：如现金、移动设备及入场证件，为防止意外发生，如需要寄存的，可至组委会办理寄存手续。</p>
+            </div>
         </div>
     </div>
 </div>
-<!---->
+
+<!-- footer -->
+<div class="footer">
+    <div class="container">
+
+        <div class="col-md-6 footer-1">
+            <h3>联系我们:</h3>
+            <p>	Tel: 021-6028 0798</p>
+            <p> Email: cae021@cae021.com</p>
+            <p>	Fax. 021-6028 0761</p>
+        </div>
+        <div class="col-md-6 footer-1">
+            <h3>地址: </h3>
+            <p>上海市徐汇区古美路1582号总部园C栋8F</p>
+        </div>
+        <div class="clearfix"> </div>
+        <div class="foot-bottom">
+            <p>Copyright <a href="#/">@2016 CAE 中国农机展 华品展览 </a></p>
+        </div>
+    </div>
+</div>
+<!-- footer -->
 </body>
 </html> 

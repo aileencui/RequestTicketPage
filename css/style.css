@@ -177,34 +177,53 @@ background-position:-167px -36px;
 }
 .banner-info{
 	text-align: center;
-    background: rgba(0, 0, 0, 0.47);
+    background: rgba(255, 255, 255, 0.52);
     padding: 3em 2em;
-    margin-top: 11em;
+    margin-top: 5em;
 }
 .banner-info h2{
 	font-size:2.3em;
-	color:#fff;
+	color: #2f3e37;
 	text-transform:uppercase;
 	font-family: 'Exo2-Medium';
 }
 .banner-info h3{
-	font-size:1em;
-	color:#fff;
+	font-size:1.2em;
+	color: #2f3e37;
 	margin-top:25px;
 	text-transform:uppercase;
 }
+
+.banner-info h4{
+    font-size:1em;
+    color: #2f3e37;
+    margin-top:25px;
+    text-transform:uppercase;
+}
+
+.banner-logo {
+
+}
+.banner-logobar {
+    margin-top: 1.5em;
+}
+
 .banner-info a{
 	font-size:1em;
 	color:#fff;
-	margin-top:3em;
+	margin:3em auto 0em auto;
 	padding:0.5em 3em;
 	background:#009944;
-	display:inline-block;
 	border:2px solid #009944;
+    width: 180px;
+    display: block;
+
+
 }
 .banner-info a:hover{
 	background:transparent;
 	border:2px solid #009944;
+    color: #009944;
 }
 /*--top-nav--*/
 .logo {
@@ -337,6 +356,7 @@ ul.dropdown-menu {
 }
 .top-nav ul li a.active {
     color: #009944 !important;
+    background: none !important;
 }
 /* Effect 11: text fill based on Lea Verou's animation http://dabblet.com/gist/6046779 */
 .top-nav ul li a {
@@ -650,7 +670,7 @@ p.info{
     margin: 1em 0;
     outline: none;
     background: none;
-    color: #cecece;
+    color: #2f3e37;
     border: 1px solid #cecece;
     display: block;
 }
@@ -660,23 +680,21 @@ p.info{
     min-height: 170px;
     display: block;
 }
+
 .contact-form input[type="submit"]{
-    padding:0.3em 2em;
-    font-size: 0.9em;
-    outline: none;
-    border: none;
-    color: #fff;
-    background: #009944;
+    font-size:1em;
+    color:#fff;
+    margin:3em auto 0em auto;
+    padding:0.5em 3em;
+    background:#009944;
+    border:2px solid #009944;
+    width: 180px;
     display: block;
 }
 .contact-form input[type="submit"]:hover{
-    background: #000;
-    transition: 0.5s all;
-    -webkit-transition: 0.5s all;
-    -o-transition: 0.5s all;
-    -ms-transition: 0.5s all;
-    -moz-transition: 0.5s all;
-    display: block;
+    background:transparent;
+    border:2px solid #009944;
+    color: #009944;
 }
 
 .contact-para p {
@@ -852,6 +870,16 @@ p.info{
     left: 36%;
     top: 24%;
 }
+
+    .banner-logo {
+        width:80%;
+        height: 80%;
+    }
+    .banner-logobar {
+        width:80%;
+        height: 80%;
+    }
+
 .welcm-left h3 {
     font-size: 2.6em;
 }
@@ -944,6 +972,16 @@ span.menu{
     left: 36%;
     top: 12%;
 }
+
+    .banner-logo {
+        width:80%;
+        height: 80%;
+    }
+    .banner-logobar {
+        width:80%;
+        height: 80%;
+    }
+
 .banner {
     min-height: 392px;
 }
@@ -1029,6 +1067,16 @@ span.menu{
     left: 27%;
     top: 12%;
 }
+
+    .banner-logo {
+        width:70%;
+        height: 70%;
+    }
+    .banner-logobar {
+        width:70%;
+        height: 70%;
+    }
+
 .banner-info h2 {
     font-size: 1.5em;
     line-height: 1.4em;
